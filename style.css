@@ -1,6 +1,4 @@
-*{
-    /* border: solid; */
-}
+
 .logo{
     max-width:200px ;
     min-width: 100px;
@@ -8,13 +6,10 @@
     min-width: 80px;
 }
 
-.ok i{
-    background-color: rgb(188, 188, 17);
-    width: 100px;
-    height: 100px;
-    border: solid;
-}
 span{
     font-weight: bolder;
     color: blue;
+}
+i{
+    font-size: 100px;
 }
