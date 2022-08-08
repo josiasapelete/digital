@@ -1,4 +1,27 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-ExtraBold.otf);
+}
+@font-face {
+    font-family: 'cocogoose';
+    src: url(font/Cocogoose\ Pro\ Italic-trial.ttf);
+}
+@font-face {
+    font-family: 'cambria';
+    src: url(font/Cambria-Font-For\ Android.ttf);
+}
+h2{
+    font-family: 'cocogoose', sans-serif;
 
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+
+}
+p{
+    font-family: 'cambria', sans-serif;
+
+}
 .logo{
     max-width:200px ;
     min-width: 100px;
