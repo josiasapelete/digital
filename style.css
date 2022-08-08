@@ -13,3 +13,13 @@ span{
 i{
     font-size: 100px;
 }
+#work h2{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
+#work div img{
+    
+}
