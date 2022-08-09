@@ -126,7 +126,7 @@
 
 
   <div id="work">
-    <div class="icon text-center">
+    <div class="icon mt-3 text-center">
       <img class="w-25 " src="image/ICON NOS SERVICES.png" alt="">
     </div>
     <h1 class="text-center my-5 ">Nos Services</h1>
@@ -163,7 +163,7 @@
   <!-- JavaScript Bundle with Popper -->
   <div class="container ">
     <div class="text-center">
-      <img class="w-50" src="image/com.png" alt="">
+      <img class="w-25 " src="image/com.png" alt="">
     </div>
     <h2 class="text-center mb-2 ">Commander un service</h2>
 
@@ -197,77 +197,62 @@
 <!--============= =============== ============= ========== Form ============= ============= =============== ============ =============== ================= ============ =============== ============ ===========-->
 <div> <hr ></div>
 <div class="container" id="form" >
-  <div class="row" >
-    <div class="col-5">
-      <h1 class="mb-5">Contact Us</h1>
-      <form
-        action="https://formsubmit.co/f532c712f0fb01646c2efbf6c3a90b63 "
-        method="POST"
-        
-      >
-        <div class="mb-3">
-          <label class="form-label">Full Name</label>
-          <input name="name" type="text" class="form-control" required />
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
-          <input name="email" type="email" class="form-control" required />
-          <div id="emailHelp" class="form-text">
-            Don't worry, we won't share it with anyone else.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Phone (optional)</label>
-          <input name="phone" \type="tel" class="form-control" />
-          <div id="phoneHelp" class="form-text">
-            If you rather talk to a human directly.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Service</label>
-          <select name="Service" class="form-control" >
-            <option value="marqueting">Marqueting</option>
-            <option value="info">infographie</option>
-            <option value="csw">Conception de site web</option>
-          </select>
-          <div id="phoneHelp" class="form-text">
-            Our Services
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Your Message</label>
-          <textarea
-            name="message"
-            class="form-control"
-            rows="3"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-
-    <div class="col-1"></div>
-
-    <div class="col-6 position-relative">
-      <img
-        src="./image/mail.svg"
-        class="w-75 position-absolute top-50 start-50 translate-middle"
-      />
-    </div>
-  </div>
+  
 </div>
 
 
 <!-- ============ ================= ================ Footer ================================================================-->
 
-  <footer>
+  <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <p>Digital LS votre</p>
+						<h2 class="footer-heading mt-5"><a href="#" class="logo"><img class="w-50 h-25" src="image/logo1.png" alt="Logo"></a></h2>
+						
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<div class="row">
+              <div class="col-12"><h3>Nos Horaires</h3></div>
+              
+              <div class="col-6 ">Lundi à Vendredi :</div>
+              <div class="col-6">08H00-13H00 / 14H00 - 18H00 </div>
+              <div class="col-6">Samedi :</div>
+              <div class="col-6">08H00-12H30</div>
+            </div>
+					</div>
+					
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h3 >Commander un service</h3>
+						<form action="#" class="subscribe-form">
+              <div class="form-group ">
+				<input type="text" class="form-control my-2 rounded-left" placeholder="Entrez votre Nom ">
+				<input type="mail" class="form-control my-2 rounded-left" placeholder="Enter email address">
+                <select name="service" class="form-control my-2 rounded-left bg-ligth"  id="">
+					<option value="infographie">Infographie</option>
+					<option value="cm">Communty Manager</option>
+					<option value="csw">Conception de site Web</option>
+				</select>
+                <button type="button" class="btn btn-warning">Envoyer</button>
+              </div>
+            </form>
+            
+					</div>
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h3>Nous Contactez</h3>
+            <ul id="reseau" class="my-5">
+              <li class="list-unstyled"><a target="_blank" href="https://www.facebook.com/digitallscompany/"><i class="fa-brands fa-facebook"></i></a> <span class="ms-2">Digital LS</span> </li>
+              <li class="list-unstyled my-2"><a href=""><i class="fa-brands fa-instagram"></i></a><span class="ms-2">Digital LS</span> </li>
+              <li class="list-unstyled"><a href=""><i class="fa-brands fa-square-whatsapp"></i></a><span class="ms-2">Digital LS</span> </li>
+            </ul>
+					</div>
+				</div>
+			</div>
 
+	            <p class="copyright text-center ">
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
+	  </p>
+	         
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

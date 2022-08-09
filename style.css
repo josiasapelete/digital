@@ -16,10 +16,11 @@
     src: url(font/Cambria-Font-For\ Android.ttf);
 }
 
-h2{
+h2,h3{
     font-family: 'cocogoose', sans-serif;
 
 }
+
 h1{
     font-family: 'Montserrat', sans-serif;
 
@@ -51,6 +52,12 @@ span{
 
 i{
     font-size: 100px;
+}
+#reseau li i{
+    font-size:x-large;
+}
+img{
+    /* border: solid; */
 }
 /* #work .icon {
     min-width: 200px;
