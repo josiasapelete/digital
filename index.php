@@ -20,7 +20,7 @@
     <header class="mb-5">
       <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="assets/assets/image/logo1.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="assets/image/logo1.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,10 +57,7 @@
         </div>
       </nav>
     </header>
-  </div><br>
-<br>
-<br>
-
+  </div>
   <div class="container-fluid my-5">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -90,8 +87,7 @@
       </button>
     </div>
   </div>
-<br>
-<br>
+
 
   <p id="about"></p>
 
@@ -126,8 +122,7 @@
       </div>
     </div>
   </div>
-<br>
-<br>
+
 
 
   <div id="work">
