@@ -16,12 +16,13 @@
 <?php
     if(isset($_GET['del'])){
         $sup= $_GET['del'];
-        $reqdel= "DELETE FROM vetement WHERE id=$sup";
+        $reqdel= "DELETE FROM articles WHERE id=$sup";
         $resultat= mysqli_query($conn,$reqdel);
     }
     if($resultat){
         echo "<label style='text-align:center ;color:#960406;'>
         La suppression a été correctement effectuée......</label>";
+        header('location:acceuil.php');
     } else{
         echo "<label style='text-align:center ;color:#960406;'>
         La suppression a échoué......</label>";

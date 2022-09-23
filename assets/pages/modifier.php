@@ -9,15 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container">
-        <form method="post" id="formulaire" enctype="multipart/form-data">
-            <h2 style="text-align: center;">Mettre à jour un vetement</h2>
-            <label for=""> <b>Titre</b></label> <br>
-            <input type="text" placeholder="Entrez la marque" name="titre" required class="zonetext"> <br>
-        
-            <label for=""> <b>Prix</b></label> <br>
-            <input type="number" placeholder="Entrez le prix unitaire" name="prixtext" required class="zonetext"> <br>
-
+    <div class="container">
+        <form method="post" class="d-flex flex-column" enctype="multipart/form-data">
+            <h2 style="text-align: center;">Mettre à jour un article</h2>
+            <label for=""> <b>titre :</b></label> <br>
+            <input type="text" placeholder="Entrez le titre" name="titre" required class="zonetext"> <br>
+            <label for=""> <b>description :</b></label> <br>
+            <textarea name="description" id="" placeholder="Entrez le description"  required  ></textarea> <br>
             <label for=""> <b>Photo</b></label> <br>
             <input type="file" placeholder="Choissez une image" name="phototext" required class="zonetext"> <br>
 
@@ -30,16 +28,16 @@
                 <?php
 
                         if(isset($_POST['btmod'])){
-                            $titre= $_POST['titre'];
-                            $prix= $_POST['prixtext'];
+                            $titre=$_POST['titre'];
+                            $description=$_POST['description'];
 
                             $modifier= $_GET['mod'];
 
                             $image=$_FILES['phototext']['tmp_name'];
 
-                            $trajet= "image/".$_FILES['phototext']['name'];
+                            $trajet= "{$_SERVER['DOCUMENT_ROOT']}image/".$_FILES['phototext']['name'];
                             move_uploaded_file($image,$trajet);
-                            $requp= "UPDATE articles SET titre='$titre', prix='$prix',photo='$trajet' WHERE id='$modifier'";
+                            $requp= "UPDATE articles SET titre='$titre', description='$description',image='$trajet' WHERE id='$modifier'";
 
                             $resultat= mysqli_query($conn,$requp);
                             if($resultat){

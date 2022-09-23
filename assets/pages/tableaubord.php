@@ -51,33 +51,11 @@
                   if (isset($_POST['btadd'])) {
                     $titre = $_POST['titre'];
                     $description = $_POST['description'];
-                    $image = $_FILES['phototext']['tmp_name'];
-                    $trajet = "image/". $_FILES['phototext']['name'];
-
-                    // if($_FILES["phototext"]["error"]===4){
-                    //   echo "<script>alert('Vous devez choisir une image')</script>";
-                    // } else{
-                    //   $filename=$_FILES["image"]["name"];
-                    //   $filesize=$_FILES["image"]["size"];
-                    //   $tmpname=$_FILES["image"]["tmp_name"];
-                    //   $validExtension=['jpg','jpeg','png','wepb','gif'];
-                    //   $imageExtension=explode('.',$filename);
-                    //   $imageExtension=strtolower(end($imageExtension));
-                    //   if(!in_array($imageExtension,$validExtension)){
-                    //     echo "<script>alert('Vous devez choisir une image avec une bonne extension')</script>";
-                    //   } elseif($filesize>1000000){
-                    //     echo "<script>alert('Vous devez choisir une image de moyenne taille')</script>";
-                    //   } else{
-                    //     $newImageName=uniqid();
-                    //     $newImageName='.'.$imageExtension;
-
-                    //     move_uploaded_file($tmpname,'image/',$newImageName);
-                    //   }
-                    // }
-
-                    $sql = "SELECT * FROM staffs";
+                    $image=$_FILES['phototext']['tmp_name'];
+                    $trajet="image/".$_FILES['phototext']['name'];
+                   
                     $id = $_SESSION['id'];
-                    // move_uploaded_file($image,$trajet);
+                   move_uploaded_file($image,$trajet);
                     $reqadd = "INSERT INTO articles (titre,description,image,poster_id) values ('$titre','$description','$trajet','$id')";
                     $resultat = mysqli_query($conn, $reqadd);
                     if ($resultat) {
@@ -122,7 +100,6 @@
     while ($ligne = mysqli_fetch_assoc($resultat)) {
     ?>
     <div class="col-12 shadow m-2">
-
     <b>titre:
        <?php echo $ligne['titre']; ?>
     </b>

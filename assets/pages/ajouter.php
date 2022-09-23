@@ -24,7 +24,6 @@ session_start();
             <label for=""><b>Photo :</b></label>
             <input type="file" name="phototext" placeholder="Choisir une photo" id="submit" class="zonetext"> 
             <input type="submit" name="btadd" value="Ajouter" id="submit" class="submit">
-            
             <p class="submit"><a href="acceuil.php">Tableau de bord</a></p>
             <label style="text-align:center ;color:#960406;">
             <?php 
@@ -32,10 +31,13 @@ session_start();
                 $titre=$_POST['titre'];
                 $description=$_POST['description'];
                 $image=$_FILES['phototext']['tmp_name'];
-                $trajet="image/".$_FILES['phototext']['name'];
+                $trajet= "{$_SERVER['DOCUMENT_ROOT']}image/".$_FILES['phototext']['name'];
                 $sql="SELECT * FROM staffs";
                 $id=$_SESSION['id'];
-                  move_uploaded_file($image,$trajet);
+                  if(!move_uploaded_file($image,$trajet)){
+                    echo "<script>alert('telechargement échouer')</script>";
+
+                  }
                 $reqadd="INSERT INTO articles (titre,description,image,poster_id) values ('$titre','$description','$trajet','$id')";
                 $resultat= mysqli_query($conn,$reqadd);
                 if($resultat){
