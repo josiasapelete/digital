@@ -22,10 +22,11 @@
                 $req= "select * from staffs where id ='".$_SESSION['id']."'";
                 $resultat= mysqli_query($conn,$req);
                 $ligne= mysqli_fetch_assoc($resultat);
+                // var_dump($ligne);
             ?>
-            <!-- <b>Bonjour et bienvenue <?php echo $ligne['nom'] ?> </b>
-            <img src="<?php echo $ligne['image'] ?>" alt="Oooh lala!" class="photo"> <br>
-                <button><a href="editprofil.php?id= n <?=$ligne['id'];?>">Modifier le profil</a></button> -->
+            <b>Bonjour et bienvenue <?php echo $ligne['Nom'] ?> </b>
+          
+                <button><a href="editprofil.php?id= n <?=$ligne['id'];?>">Modifier le profil</a></button>
             
             <!-- <a  href="editprofil.php?mod=<?php // echo $_SESSION['monLogin']; ?>">Modifier le profil</a> <br> <br> -->
             

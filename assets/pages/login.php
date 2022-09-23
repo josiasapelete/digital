@@ -47,7 +47,7 @@
                     if ($ligne != 0) {
 
                         session_start();
-                        $_SESSION['monLogin'] = $ligne['nom'];
+                        $_SESSION['monLogin'] = $ligne['Nom'];
                         $_SESSION['email'] = $ligne['email'];
                         $_SESSION['id'] = $ligne['id'];
                         header("location:acceuil.php");
