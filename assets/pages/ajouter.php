@@ -12,6 +12,8 @@ session_start();
 </head>
 <body>
      <div id="container">
+
+     <!-- enctype="multipart/form-data"  utiliser pour pouvoir telecharger les medias -->
          <form action="" name="addform" id="formulaire" method="post" enctype="multipart/form-data">
               <h2 style="text-align:center ;">Ajouter un nouveau article</h2>
               
@@ -34,6 +36,7 @@ session_start();
                 $trajet= "{$_SERVER['DOCUMENT_ROOT']}image/".$_FILES['phototext']['name'];
                 $sql="SELECT * FROM staffs";
                 $id=$_SESSION['id'];
+                //foonctiion pour uploader l'image
                   if(!move_uploaded_file($image,$trajet)){
                     echo "<script>alert('telechargement échouer')</script>";
 

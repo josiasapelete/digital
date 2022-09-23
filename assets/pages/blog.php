@@ -61,7 +61,7 @@
                 <?php
                 while ($ligne = mysqli_fetch_assoc($resultat)) {
                 ?>
-
+                    <!-- partie dynamique qui genere  les articles -->
 
                     <div class="col-12 m-2 col-md-3  col-xxl-2 shadow rounded">
 
@@ -72,7 +72,7 @@
                             <p class="card-text"><small class="text-muted">Last updated <?= $ligne['date']; ?></small></p>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             <p class="text-center">
-
+                            <!-- methode get pour ouvrir l'article dont l'id est selectionner -->
                                 <a class="btn btn-primary" href="article.php?id=<?= $ligne['id']; ?>">Lire</a>
                             </p>
                         </div>
