@@ -59,7 +59,7 @@ if (!isset($_GET['id']) or !is_numeric($_GET['id'])) {
         <a class="btn btn-secondary" href="blog.php">Retour aux articles</a>
         <!-- Partie dynamique qui génère les infos du post -->
         <div class="row">
-            <div class="offset-md-3 col-12 col-md-6"><img class="w-100 " src="../<?= $ligne['image']; ?>" alt="Image du post"></div>
+            <div class="offset-md-3 col-12 col-md-6"><img class="w-100 " src="<?= $ligne['image']; ?>" alt="Image du post"></div>
             <div class="offset-md-3 col-md-6 my-3 ">
                 <!-- <div class=" d-flex">
                     <div id="profil" class="profil mx-3">

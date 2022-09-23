@@ -52,7 +52,7 @@
                     $titre = $_POST['titre'];
                     $description = $_POST['description'];
                     $image=$_FILES['phototext']['tmp_name'];
-                    $trajet="image/".$_FILES['phototext']['name'];
+                    $trajet="../image/".$_FILES['phototext']['name'];
                    
                     $id = $_SESSION['id'];
                    move_uploaded_file($image,$trajet);
@@ -108,7 +108,7 @@
      </p>
       <div class="d-flex justify-content-center">
       <p>
-       <img src="../<?php echo $ligne['image']; ?>" class="vetphoto">
+       <img src="<?php echo $ligne['image']; ?>" class="vetphoto">
      </p>
      <p>
        <a class="add" href="supprimer.php?del=<?php echo $ligne['id']; ?>"><img src="../image/del.png" alt=""></a>

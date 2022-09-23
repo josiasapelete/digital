@@ -33,7 +33,7 @@ session_start();
                 $titre=$_POST['titre'];
                 $description=$_POST['description'];
                 $image=$_FILES['phototext']['tmp_name'];
-                $trajet= "{$_SERVER['DOCUMENT_ROOT']}image/".$_FILES['phototext']['name'];
+                $trajet= "../image/".$_FILES['phototext']['name'];
                 $sql="SELECT * FROM staffs";
                 $id=$_SESSION['id'];
                 //foonctiion pour uploader l'image

@@ -65,7 +65,7 @@
 
                     <div class="col-12 m-2 col-md-3  col-xxl-2 shadow rounded">
 
-                        <img src="../<?= $ligne['image']; ?>" class="w-100 h-50 mb-2" alt="...">
+                        <img src="<?= $ligne['image']; ?>" class="w-100 h-50 mb-2" alt="...">
                         
                         <div class="my-3  ">
                             <h5 class="card-title overflow-hidden"><?= $ligne['titre']; ?></h5>
