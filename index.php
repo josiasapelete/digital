@@ -211,8 +211,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-          <p>Digital LS votre</p>
-          <h2 class="footer-heading mt-5"><a href="#" class="logo"><img class="w-50 h-25" src="assets/image/logo1.png" alt="Logo"></a></h2>
+          <p>Digital LS , <span>Le genie Digital à votre service</span></p>
+          <h2 class="footer-heading mt-5"><a href="#" class=""><img class="w-100 h-50" src="assets/image/logo1.png" alt="Logo"></a></h2>
 
         </div>
         <div class="col-md-6 col-lg-3 mb-md-0 mb-4">

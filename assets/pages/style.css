@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-header {
+/* header {
     width: 100%;
     height: 50%;
     position: relative;
     z-index: 1;
 
-}
+} */
 
 #search {
     width: 50%;
@@ -20,17 +20,17 @@ header {
 }
 
 * {
-    border: solid;
+    /* border: solid; */
 }
 
-#searchBt {
+/* #searchBt {
     width: 49%;
     height: 30px;
     border: none;
     background-color: #FFB000;
     color: #FFF;
-}
-
+} */
+/* 
 #article {
     width: 80%;
     margin-left: auto;
@@ -38,7 +38,7 @@ header {
     padding: 2%;
     vertical-align: middle;
     border: solid;
-}
+} */
 
 /* #vetement{
     border: 1px solid #999;
@@ -64,7 +64,7 @@ a {
     color: black;
 }
 
-header .login {
+/* header .login {
     opacity: 0.8;
     color: white;
     padding: 10px;
@@ -75,13 +75,13 @@ header .login {
     position: absolute;
     right: 30px;
     z-index: 10;
-}
+} */
 
-header .login:hover {
+/* header .login:hover {
     opacity: 1;
     background-color: #FFB000;
     border-radius: 20px;
-}
+} */
 
 #essai {
     z-index: 1000;
@@ -135,7 +135,7 @@ header .login:hover {
 }
 
 .submit {
-    width: 100%;
+    /* width: 100%; */
     background-color: #FFB000;
     color: white;
     padding: 14px 20px;

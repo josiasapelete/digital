@@ -10,18 +10,20 @@
 </head>
 <body>
 <?php
-
+//variable qui contient l'id de l'article choisi
+    $modifier= $_GET['mod'];
+//selectionnner l'article pour que les inputs soit préremplis avant la modification
+ $sql="SELECT * FROM articles WHERE id ='$modifier'";
+ $result=mysqli_query($conn,$sql);
+ $row=mysqli_fetch_assoc($result);
 if(isset($_POST['btmod'])){
     $titre=$_POST['titre'];
     $description=$_POST['description'];
 
-    $modifier= $_GET['mod'];
 
     $image=$_FILES['phototext']['tmp_name'];
     
-    //  $sql="SELECT * FROM articles WHERE id ='$modifier'";
-    //  $result=mysqli_query($conn,$sql);
-    //  $row=mysqli_fetch_assoc($result);
+    
 
      var_dump($row);
     $trajet= "../image/".$_FILES['phototext']['name'];
@@ -44,7 +46,7 @@ if(isset($_POST['btmod'])){
             <label for=""> <b>titre :</b></label> <br>
             <input type="text" placeholder="Entrez le titre" value="<?= $row['titre']; ?>" name="titre" required class="zonetext"> <br>
             <label for=""> <b>description :</b></label> <br>
-            <textarea name="description" id="" value="<?= $row['description']; ?>" placeholder="Entrez le description"  required  ></textarea> <br>
+            <textarea name="description" id=""  placeholder="Entrez le description"  required  ><?= $row['description']; ?></textarea> <br>
             <label for=""> <b>Photo</b></label> <br>
             <input type="file" placeholder="Choissez une image" name="phototext" required class="zonetext"> <br>
 
